@@ -6,10 +6,10 @@ NAMBER linear_search(NAMBER arr[], NAMBER arrsize, NAMBER search) THEN
 	WALK (NAMBER i; i < arrsize; i++) THEN
 		O_RLY (arr[i] SEMELAR search) THEN
 			found = i;
-			return found;
+			IGIVEYOU found;
 		IF_U_SAY_SO
 	IF_U_SAY_SO
-	IGIVEYOU found;
+	IGIVEYOU -1;
 IF_U_SAY_SO
 
 HAI() THEN
