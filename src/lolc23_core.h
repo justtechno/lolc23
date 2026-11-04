@@ -53,11 +53,17 @@
 #define MAKEPLACE malloc
 #define MAKECLEANPLACE calloc
 #define MOREPLACE realloc
+#define GIMMEINPUT scanf
+#define BRINGS puts
+#define SMEOW sprintf
+#define FMEOW fprintf
+#define SUZTEM system
+#define LOOKIN fopen
 
 // codestyle
 #define THEN {
 #define IF_U_SAY_SO }
-#define HAI int main
+#define HAI int main(int argc, char **argv)
 #define CONCAT(a, b) a ## b
 #define TLDR(a, b) CONCAT(a, b)
 
@@ -81,11 +87,15 @@
 #define LISS <
 #define PLUSIS +=
 #define IS =
+#define BLANS %
 #define MINUSIS -=
 #define AND &&
 #define OR ||
 #define NOT !
 #define SEMELAR ==
+#define NOT_SEMELAR !=
 #define MENYS_NAMBER(n) -a
+#define MOAR ++
+#define NOM --
 
 #endif

@@ -9,8 +9,8 @@ NONE swap(NAMBER *arr, NAMBER i, NAMBER j) THEN
 IF_U_SAY_SO
 
 NAMBER *bubblesort(NAMBER arr[], NAMBER size) THEN
-	WALK (NAMBER i IS ZERO; i LISS size MENYS WAN; i++) THEN
-		WALK (NAMBER j IS ZERO; j LISS size MENYS i MENYS WAN; j++) THEN
+	WALK (NAMBER i IS ZERO; i LISS size MENYS WAN; i MOAR) THEN
+		WALK (NAMBER j IS ZERO; j LISS size MENYS i MENYS WAN; j MOAR) THEN
 			O_RLY (arr[j] MORI arr[j PLYS WAN]) THEN
 				swap(arr, j, j PLYS WAN);
 			IF_U_SAY_SO
@@ -19,10 +19,10 @@ NAMBER *bubblesort(NAMBER arr[], NAMBER size) THEN
 	IGIVEYOU arr;
 IF_U_SAY_SO
 
-HAI() THEN 
+HAI THEN 
 	NAMBER arr[TEN] IS {TEN, NINE, EIGHT, SEVEN, SIKS, FIV, FOYR, TRI, TU, WAN};
 	NAMBER *sorted IS bubblesort(arr, TEN);
-	WALK (NAMBER i IS ZERO; i LISS TEN; i++) THEN
+	WALK (NAMBER i IS ZERO; i LISS TEN; i MOAR) THEN
 		MEOW("%d ", sorted[i]);
 	IF_U_SAY_SO
 	IGIVEYOU ZERO;

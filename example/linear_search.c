@@ -3,7 +3,7 @@
 
 NAMBER linear_search(NAMBER arr[], NAMBER arrsize, NAMBER search) THEN
 	NAMBER found;
-	WALK (NAMBER i; i LISS arrsize; i++) THEN
+	WALK (NAMBER i; i LISS arrsize; i MOAR) THEN
 		O_RLY (arr[i] SEMELAR search) THEN
 			found IS i;
 			IGIVEYOU found;
@@ -12,7 +12,7 @@ NAMBER linear_search(NAMBER arr[], NAMBER arrsize, NAMBER search) THEN
 	IGIVEYOU MENYS WAN;
 IF_U_SAY_SO
 
-HAI() THEN
+HAI THEN
 	NAMBER arr[TEN] = {NINE, WAN, TU, TRI, FOYR, FIV, SIKS, SEVEN, EIGHT, TEN};
 	NAMBER result = linear_search(arr, TEN, NINE);
 	MEOW("%d\n", result);
