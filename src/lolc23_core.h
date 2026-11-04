@@ -21,6 +21,9 @@
 #define TRAP union
 #define BADBOI unsigned
 #define NONE void
+#define MAI_THINGS va_list
+#define MAI_THINGS_START va_start
+#define MAI_THINGS_END va_end
 
 // keywords
 #define RUNOUT break
