@@ -2,17 +2,17 @@
 #include <stdio.h>
 
 NONE swap(NAMBER *arr, NAMBER i, NAMBER j) THEN
-	NAMBER tempi = arr[i];
-	NAMBER tempj = arr[j];
-	arr[j] = tempi;
-	arr[i] = tempj;
+	NAMBER tempi IS arr[i];
+	NAMBER tempj IS arr[j];
+	arr[j] IS tempi;
+	arr[i] IS tempj;
 IF_U_SAY_SO
 
 NAMBER *bubblesort(NAMBER arr[], NAMBER size) THEN
-	WALK (NAMBER i = 0; i < size - 1; i++) THEN
-		WALK (NAMBER j = 0; j < size - i - 1; j++) THEN
-			O_RLY (arr[j] > arr[j + 1]) THEN
-				swap(arr, j, j + 1);
+	WALK (NAMBER i IS ZERO; i LISS size MENYS WAN; i++) THEN
+		WALK (NAMBER j IS ZERO; j LISS size MENYS i MENYS WAN; j++) THEN
+			O_RLY (arr[j] MORI arr[j PLYS WAN]) THEN
+				swap(arr, j, j PLYS WAN);
 			IF_U_SAY_SO
 		IF_U_SAY_SO
 	IF_U_SAY_SO
@@ -20,10 +20,10 @@ NAMBER *bubblesort(NAMBER arr[], NAMBER size) THEN
 IF_U_SAY_SO
 
 HAI() THEN 
-	NAMBER arr[10] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
-	NAMBER *sorted = bubblesort(arr, 10);
-	WALK (NAMBER i = 0; i < 10; i++) THEN
+	NAMBER arr[TEN] IS {TEN, NINE, EIGHT, SEVEN, SIKS, FIV, FOYR, TRI, TU, WAN};
+	NAMBER *sorted IS bubblesort(arr, TEN);
+	WALK (NAMBER i IS ZERO; i LISS TEN; i++) THEN
 		MEOW("%d ", sorted[i]);
 	IF_U_SAY_SO
-	IGIVEYOU 0;
+	IGIVEYOU ZERO;
 IF_U_SAY_SO

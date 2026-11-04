@@ -57,7 +57,35 @@
 // codestyle
 #define THEN {
 #define IF_U_SAY_SO }
-#define SEMELAR ==
 #define HAI int main
+#define CONCAT(a, b) a ## b
+#define TLDR(a, b) CONCAT(a, b)
+
+// math
+#define ZERO 0
+#define WAN 1
+#define TU 2
+#define TRI 3
+#define FOYR 4
+#define FIV 5
+#define SIKS 6
+#define SEVEN 7
+#define EIGHT 8
+#define NINE 9
+#define	TEN 10
+#define PLYS +
+#define MENYS -
+#define DEVEDE /
+#define MYLTIPLAI *
+#define MORI >
+#define LISS <
+#define PLUSIS +=
+#define IS =
+#define MINUSIS -=
+#define AND &&
+#define OR ||
+#define NOT !
+#define SEMELAR ==
+#define MENYS_NAMBER(n) -a
 
 #endif

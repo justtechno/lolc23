@@ -3,5 +3,5 @@
 
 HAI() THEN
 	MEOW("Hello, World");
-	IGIVEYOU 0;
+	IGIVEYOU ZERO;
 IF_U_SAY_SO

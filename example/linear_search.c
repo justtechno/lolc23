@@ -3,18 +3,18 @@
 
 NAMBER linear_search(NAMBER arr[], NAMBER arrsize, NAMBER search) THEN
 	NAMBER found;
-	WALK (NAMBER i; i < arrsize; i++) THEN
+	WALK (NAMBER i; i LISS arrsize; i++) THEN
 		O_RLY (arr[i] SEMELAR search) THEN
-			found = i;
+			found IS i;
 			IGIVEYOU found;
 		IF_U_SAY_SO
 	IF_U_SAY_SO
-	IGIVEYOU -1;
+	IGIVEYOU MENYS WAN;
 IF_U_SAY_SO
 
 HAI() THEN
-	NAMBER arr[10] = {9, 1, 2, 3, 4, 5, 6, 7, 8, 10};
-	NAMBER result = linear_search(arr, 10, 9);
+	NAMBER arr[TEN] = {NINE, WAN, TU, TRI, FOYR, FIV, SIKS, SEVEN, EIGHT, TEN};
+	NAMBER result = linear_search(arr, TEN, NINE);
 	MEOW("%d\n", result);
-	IGIVEYOU 0;
+	IGIVEYOU ZERO;
 IF_U_SAY_SO
