@@ -49,7 +49,7 @@
 // functions
 #define MEOW printf
 #define FLEE exit
-#define STILL free
+#define STEAL free
 #define MAKEPLACE malloc
 #define MAKECLEANPLACE calloc
 #define MOREPLACE realloc
